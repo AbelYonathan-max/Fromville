@@ -7,12 +7,12 @@ if errorlevel 1 goto setup
 goto run
 :setup
 echo Setting up Fromville. This takes about a minute...
-copy /b "data\game.part00"+"data\game.part01"+"data\game.part02"+"data\game.part03"+"data\game.part04"+"data\game.part05"+"data\game.part06"+"data\game.part07" "Fromville-Windows.zip" >nul
+copy /b "data\game.part00"+"data\game.part01"+"data\game.part02"+"data\game.part03"+"data\game.part04" "Fromville-Windows.7z" >nul
 if errorlevel 1 goto fail
 mkdir game 2>nul
-tar -xf "Fromville-Windows.zip" -C game
+"data\7zr.exe" x -y -o"game" "Fromville-Windows.7z" >nul
 if errorlevel 1 goto fail
-del "Fromville-Windows.zip"
+del "Fromville-Windows.7z"
 copy /y "data\version.txt" "game\version.txt" >nul
 :run
 start "" "game\Fromville.exe" %*
