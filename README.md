@@ -3,7 +3,7 @@
 A fan game slice: the opening, night one, and the morning at the diner.
 
 ## How to play
-1. Click the green **Code** button above, then **Download ZIP** (about 740 MB).
+1. Click the green **Code** button above, then **Download ZIP** (about 445 MB).
 2. Right-click the downloaded zip, choose **Extract All**, and open the extracted folder.
 3. Double-click **Play.bat**. The first time, it builds the game (about a minute), then starts it.
    After that, Play.bat starts the game straight away.
